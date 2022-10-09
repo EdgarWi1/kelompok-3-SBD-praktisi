@@ -20,13 +20,13 @@ CREATE TABLE matkul (
 );  
 
 #buat tabel jadwal
+CREATE TABLE jadwal (
+	id_jadwal INT AUTO_INCREMENT PRIMARY KEY,
+	jam TIME NOT NULL,
+	tanggal DATE NOT NULL,
+    	id_matkul int,
+    	id_mahasiswa int,
+	FOREIGN KEY (id_matkul) REFERENCES matkul(id_matkul),
+	FOREIGN KEY (id_mahasiswa) REFERENCES mahasiswa(id_mahasiswa)
+);
 
-
-# ntah kenapa ga jalan
--- CREATE TABLE jadwal (
--- 	id_jadwal INT(10) AUTO_INCREMENT PRIMARY KEY,
--- 	tanggal DATE NOT NULL,
--- 	jam TIME NOT NULL,
--- 	FOREIGN KEY (id_matkul) REFERENCES matkul(id_matkul),
--- 	FOREIGN KEY (id_mahasiswa) REFERENCES mahasiswa(id_mahasiswa)
--- );
