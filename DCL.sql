@@ -2,7 +2,7 @@
 CREATE USER 'Sisfo'@'localhost' IDENTIFIED BY '2021';
 
 # Beri hak akses ke user 
-GRANT CREATE, DROP, SELECT, INSERT, DELETE, UPDATE 
+GRANT ALL PRIVILEGES 
 ON contract_sisfo
 TO 'Sisfo'@'localhost';
 
