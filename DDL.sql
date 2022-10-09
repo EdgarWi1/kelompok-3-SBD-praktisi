@@ -20,12 +20,7 @@ CREATE TABLE matkul (
 );  
 
 #buat tabel jadwal
-CREATE TABLE jadwal (
-	id_jadwal INT(100) auto_increment primary key,
-	nama VARCHAR(100),
-	tanggal date,
-	waktu time
-);
+
 
 # ntah kenapa ga jalan
 -- CREATE TABLE jadwal (
