@@ -40,7 +40,7 @@ CREATE TABLE students_schedule (
 INSERT INTO students (id, full_name, address, major) VALUES 
 (1, 'Rafiq', 'Sudiang', 'Sistem Informasi'),
 (2, 'Edgar', 'Antang', 'Sistem Informasi'),
-(3, 'Aflah', 'Toddopuli', 'Sistem Informasi'),
+(3, 'Aflah Alifu Na Mappatajang Rahman', 'Toddopuli 10 baru Jalan Al-Kausar No.5 RT 01/012', 'Sistem Informasi'),
 (4, 'Kahfi', 'BTP', 'Sistem Informasi'),
 (5, 'Akku', 'Takalar', 'Sistem Informasi'),
 (6, 'Arjuna', 'Makassar', 'Sistem Informasi'),
