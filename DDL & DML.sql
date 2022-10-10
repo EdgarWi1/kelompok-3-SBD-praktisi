@@ -48,6 +48,12 @@ INSERT INTO students (id, full_name, address, major) VALUES
 (8, 'Fadilah', 'Makassar', 'Sistem Informasi');
 SELECT * FROM students;
 
+--update data mahasiswa
+--edgar
+UPDATE students 
+SET full_name = 'Edgar Silvanus Limba', address = 'Jl. Parinring I no 9 /17 Perumnas Antang'
+WHERE id = 2;
+
 -- masukkan data matkul
 INSERT INTO course (id, name, duration) 
 VALUES (1, 'SBD', 90), (2, 'WEB', 90), (3, 'Diskrit', 90), (4, 'Struktur Data', 90), (5, 'Analisis', 90);
@@ -70,6 +76,13 @@ INSERT INTO students_schedule VALUES (1, 1), (1, 2), (1, 3), (1, 4), (1, 5),
 (7, 1), (7, 2), (7, 3), (7, 4), (7, 5),
 (8, 1), (8, 2), (8, 3), (8, 4), (8, 5);
 SELECT * FROM students_schedule;
+
+--update data schedule
+DELETE FROM students_schedule
+WHERE student_id = 2
+
+INSERT INTO students_schedule
+VALUES (2,1), (2,3), (2,5);
 
 -- menghubungkan id dari tabel student, schedule, dan course
 SELECT s.id, s.full_name, c.name, sc.date, sc.time FROM students_schedule AS ss
