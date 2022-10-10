@@ -20,7 +20,7 @@ ON db_praktisi
 FROM 'Sisfo'@'localhost';
 
 # Menghapus akses tertentu (DROP) kepada semua user
-REVOKE DROP
+REVOKE DELETE
 ON db_praktisi
 FROM '*'@'localhost';
 
