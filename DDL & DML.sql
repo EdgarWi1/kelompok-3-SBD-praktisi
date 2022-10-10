@@ -41,7 +41,7 @@ INSERT INTO students (id, full_name, address, major) VALUES
 (1, 'Rafiq', 'Sudiang', 'Sistem Informasi'),
 (2, 'Edgar', 'Antang', 'Sistem Informasi'),
 (3, 'Aflah', 'Toddopuli', 'Sistem Informasi'),
-(4, 'Muhammad Kahfi MS', 'BTP Blok H No.547', 'Sistem Informasi'),
+(4, 'Kahfi', 'BTP', 'Sistem Informasi'),
 (5, 'Akku', 'Takalar', 'Sistem Informasi'),
 (6, 'Arjuna', 'Makassar', 'Sistem Informasi'),
 (7, 'Dewa', 'Makassar', 'Sistem Informasi'),
