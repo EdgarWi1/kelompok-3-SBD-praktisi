@@ -48,8 +48,7 @@ INSERT INTO students (id, full_name, address, major) VALUES
 (8, 'Fadilah', 'Makassar', 'Sistem Informasi');
 SELECT * FROM students;
 
---update data mahasiswa
---edgar
+--update data mahasiswa (Edgar)
 UPDATE students 
 SET full_name = 'Edgar Silvanus Limba', address = 'Jl. Parinring I no 9 /17 Perumnas Antang'
 WHERE id = 2;
@@ -97,8 +96,7 @@ INSERT INTO students_schedule VALUES (1, 1), (1, 2), (1, 3), (1, 4), (1, 5),
 (8, 1), (8, 2), (8, 3), (8, 4), (8, 5);
 SELECT * FROM students_schedule;
 
---update data schedule
---edgar
+--update data schedule (Edgar)
 DELETE FROM students_schedule
 WHERE student_id = 2;
 
@@ -137,4 +135,5 @@ VALUES (8,1), (8, 3), (6,5);
 SELECT s.id, s.full_name, c.name, sc.date, sc.time FROM students_schedule AS ss
 INNER JOIN schedule AS sc ON ss.schedule_id = sc.id
 INNER JOIN course AS c ON c.id = sc.course_id
-INNER JOIN students AS s ON ss.student_id = s.id;
+INNER JOIN students AS s ON ss.student_id = s.id
+WHERE s.id = 1;
