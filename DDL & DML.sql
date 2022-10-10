@@ -64,6 +64,11 @@ UPDATE students
 SET full_name = 'Muhammad Kahfi MS', address = 'Jl. Kerukunan Timur 18 Blok H No.547'
 WHERE id = 4;
 
+-- update data mahasiswa (Aflah)
+UPDATE students 
+SET full_name = 'Aflah Alifu Na Mappatajang Rahman', address = 'Todopuli 10 baru Jalan Al-Kausar No.5'
+WHERE id = 3;
+
 -- masukkan data matkul
 INSERT INTO course (id, name, duration) 
 VALUES (1, 'SBD', 90), (2, 'WEB', 90), (3, 'Diskrit', 90), (4, 'Struktur Data', 90), (5, 'Analisis', 90);
@@ -90,24 +95,31 @@ SELECT * FROM students_schedule;
 --update data schedule
 --edgar
 DELETE FROM students_schedule
-WHERE student_id = 2
+WHERE student_id = 2;
 
 INSERT INTO students_schedule
 VALUES (2,1), (2,3), (2,5);
 
 -- update data schedule (Arjuna)
 DELETE FROM students_schedule
-WHERE student_id = 6
+WHERE student_id = 6;
 
 INSERT INTO students_schedule
 VALUES (6,1), (6,2), (6,3), (6,5);
 
 --update data schedule (Kahfi)
 DELETE FROM students_schedule
-WHERE student_id = 4
+WHERE student_id = 4;
 
 INSERT INTO students_schedule
 VALUES (4,2), (6,4);
+
+--update data schedule (Aflah)
+DELETE FROM students_schedule
+WHERE student_id = 3;
+
+INSERT INTO students_schedule
+VALUES (3,2), (3, 3), (3,4);
 
 -- menghubungkan id dari tabel student, schedule, dan course
 SELECT s.id, s.full_name, c.name, sc.date, sc.time FROM students_schedule AS ss
