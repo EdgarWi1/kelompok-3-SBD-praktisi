@@ -1,5 +1,7 @@
 -- membuat database db_praktisi
 CREATE DATABASE db_praktisi;
+
+-- memilih dan menggunakan database db_praktisi
 USE db_praktisi;
 
 -- membuat tabel mahasiswa
