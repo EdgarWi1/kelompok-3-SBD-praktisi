@@ -1,39 +1,39 @@
--- membuat database
-CREATE DATABASE praktisi;
+-- membuat database db_praktisi
+CREATE DATABASE db_praktisi;
 
 -- membuat tabel mahasiswa
 CREATE TABLE students (
-   id INT,
-   full_name VARCHAR (255),
-   address VARCHAR (255),
-   major VARCHAR (255),
-   PRIMARY KEY (id)
+id INT,
+full_name VARCHAR (255),
+address VARCHAR (255),
+major VARCHAR (255),
+PRIMARY KEY (id)
 );
 
 -- membuat tabel matkul
 CREATE TABLE course (
-   id INT,
-   name VARCHAR (255),
-   duration INT,
-   PRIMARY KEY (id)
+id INT,
+name VARCHAR (255),
+duration INT,
+PRIMARY KEY (id)
 );
 
 -- membuat tabel jadwal
 CREATE TABLE schedule (
-   id INT,
-   course_id INT,
-   date DATE,
-   time TIMESTAMP,
-   PRIMARY KEY (id),
-   FOREIGN KEY (course_id) REFERENCES course(id)
+id INT,
+course_id INT,
+date DATE,
+time TIMESTAMP,
+PRIMARY KEY (id),
+FOREIGN KEY (course_id) REFERENCES course(id)
 );
 
 -- membuat tabel tambahan untuk menghubungkan antara mahasiswa dan matkul yang diambil
 CREATE TABLE students_schedule (
-   student_id INT,
-   schedule_id INT,
-   FOREIGN KEY (student_id) REFERENCES students(id),
-   FOREIGN KEY (schedule_id) REFERENCES schedule(id)
+student_id INT,
+schedule_id INT,
+FOREIGN KEY (student_id) REFERENCES students(id),
+FOREIGN KEY (schedule_id) REFERENCES schedule(id)
 );
 
 -- masukkan data mahasiswa
