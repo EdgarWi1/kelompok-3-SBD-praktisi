@@ -92,7 +92,8 @@ SELECT * FROM schedule;
 
 -- masukkan data mahasiswa ambil matkul apa saja
 -- diasumsikan mahasiswa mengambil semua matkul yang tersedia
-INSERT INTO students_schedule VALUES (1, 1), (1, 2), (1, 3), (1, 4), (1, 5),
+INSERT INTO students_schedule VALUES 
+(1, 1), (1, 2), (1, 3), (1, 4), (1, 5),
 (2, 1), (2, 2), (2, 3), (2, 4), (2, 5),
 (3, 1), (3, 2), (3, 3), (3, 4), (3, 5),
 (4, 1), (4, 2), (4, 3), (4, 4), (4, 5),
@@ -136,7 +137,6 @@ WHERE student_id = 8;
 
 INSERT INTO students_schedule
 VALUES (8,1), (8, 3), (8,5);
-
 
 -- update data schedule (Akku)
 DELETE FROM students_schedule
