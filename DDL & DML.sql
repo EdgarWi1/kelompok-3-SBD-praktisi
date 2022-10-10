@@ -148,5 +148,4 @@ VALUES (5,1), (5,3), (5,5);
 SELECT s.id, s.full_name, c.name, sc.date, sc.time FROM students_schedule AS ss
 INNER JOIN schedule AS sc ON ss.schedule_id = sc.id
 INNER JOIN course AS c ON c.id = sc.course_id
-INNER JOIN students AS s ON ss.student_id = s.id
-WHERE s.id = 1;
+INNER JOIN students AS s ON ss.student_id = s.id;
